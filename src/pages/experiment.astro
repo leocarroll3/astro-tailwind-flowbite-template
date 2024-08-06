@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeaderSmall from "../components/HeaderSmall.astro";
+import { Image } from "astro:assets";
+import FMHero2 from 'src/assets/FMHero2.webp';
+const title = "Experiment";
+const subtitle = "Contact me";
+---
+
+<Layout title="Experiment">
+  <div>
+    <HeaderSmall title="Experiment" subtitle="experiment" />
+  </div>
+  <main>
+    <div class="container">CONTENT HERE</div>
+    <div class="container">
+      <Image src={FMHero2.webp} alt="A description of my image." />
+    </div>
+  </main>
+</Layout>

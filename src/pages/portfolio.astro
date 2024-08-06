@@ -1,0 +1,27 @@
+---
+const title = "recent installations";
+const subtitle = " ";
+
+import Layout from "../layouts/Layout.astro";
+
+import HeaderSmall from "../components/HeaderSmall.astro";
+import Gallery from "../components/Gallery.astro";
+import data from "../data/site.json";
+
+type Props = {
+  projectTitle: string;
+  href: string;
+  body: string;
+  type?: string;
+  repo?: string;
+};
+---
+
+<Layout title="Portfolio">
+  <main>
+    <HeaderSmall title={title} subtitle={subtitle} />
+    <Gallery />
+
+    <style></style>
+  </main>
+</Layout>

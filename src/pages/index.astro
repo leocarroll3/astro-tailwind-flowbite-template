@@ -1,20 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
-import Header from "../components/Header.astro";
+import VisualImageHeading from "../components/VisualImageHeading.astro";
 import CTA from "../components/CTA.astro";
 import FeatureList from "../components/FeatureList.astro";
-
-import Timeline from "../components/Timeline.astro";
-
+import Heading from "../components/Heading.astro";
 import data from "../data/site.json";
 ---
 
 <Layout title={data.siteName}>
   <main>
-    <Header />
+    <Heading />
+    <VisualImageHeading />
     <CTA />
     <FeatureList />
-    <Timeline />
   </main>
 </Layout>

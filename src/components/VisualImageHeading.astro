@@ -1,12 +1,7 @@
 ---
-import Button from "./Button.astro";
-import ButtonAlt from "./ButtonAlt.astro";
-const title = "Project Title Here";
-const body = "Some text about a project or section here. Some other text about Something else here. And yet more to fill out this section";
-const buttonText = "Get Started";
-const buttonLink = "https://www.google.com";
-const buttonTwoText = "Get Started";
-const buttonTwoLink = "https://www.google.com";
+const title = "The Art & Craft of Fences";
+const body =
+  "We are a local family business focused exclusively on the Art & Craft of fence construction. Every residential property is unique, so most homeowners have a lot of questions about their fence installation. We get that- and are happy to share  our experience working with with homeowners and HOAs all over Spartanburg County. ";
 ---
 
 <section class="bg-stone-100 dark:bg-slate-800">
@@ -24,15 +19,9 @@ const buttonTwoLink = "https://www.google.com";
       >
         {body}
       </p>
-      <Button text={buttonText} href={buttonLink} />
-      <span class="mr-4"></span>
-      <ButtonAlt text={buttonTwoText} href={buttonTwoLink} />
     </div>
     <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-      <img
-        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
-        alt="mockup"
-      />
+      <img src="src/assets/FMHero2.webp" alt="mockup" />
     </div>
   </div>
 </section>
