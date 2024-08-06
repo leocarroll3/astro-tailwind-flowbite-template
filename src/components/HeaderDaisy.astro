@@ -1,0 +1,25 @@
+---
+// import the Image component and the image
+import { Picture } from "astro:assets";
+import Hero from "../assets/FM Hero3.webp";
+---
+
+<div
+  class="hero min-h-screen"
+  <Picture
+  src={Hero}
+  formats={["avif", "webp"]}
+  loading="eager"
+  alt="white vinyl fence"
+>
+</div>;" >
+<div class="hero-overlay bg-opacity-60"></div>
+<div class="hero-content text-neutral-content text-center">
+  <div class="max-w-md">
+    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+    <p class="mb-5">
+      Fence Max. We design, construct, and install residential fencing.
+    </p>
+    <button class="btn btn-primary">Get Started</button>
+  </div>
+</div>

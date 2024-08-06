@@ -1,7 +1,9 @@
 ---
-const title = "The Art & Craft of Fences";
+const title = "Art & Craft";
 const body =
-  "We are a local family business focused exclusively on the Art & Craft of fence construction. Every residential property is unique, so most homeowners have a lot of questions about their fence installation. We get that- and are happy to share  our experience working with with homeowners and HOAs all over Spartanburg County. ";
+  "Your property is unique; the layout, the terrain, the elevation, even  the soil. It's only reasonable that you may have questions about your fence installation. We're happy to share  our industry knowledge and local Upstate experience with you. Because your project is more than just a job to us- it's an opportunity to share our passion for the art & craft of fence construction. And to share our great experiences working with homeowners and HOAs all over Spartanburg County.";
+import { Picture } from "astro:assets";
+import Hero from "../assets/FM Hero3.webp";
 ---
 
 <section class="bg-stone-100 dark:bg-slate-800">
@@ -15,13 +17,18 @@ const body =
         {title}
       </h1>
       <p
-        class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+        class="max-w-2xl mb-6 text-gray-800 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
       >
         {body}
       </p>
     </div>
     <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-      <img src="src/assets/FMHero2.webp" alt="mockup" />
+      <Picture
+        src={Hero}
+        formats={["avif", "webp"]}
+        loading="eager"
+        alt="wood fence."
+      />
     </div>
   </div>
 </section>

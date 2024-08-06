@@ -1,26 +1,21 @@
 ---
 // import the Image component and the image
-import { Image } from "astro:assets";
-import darkImage from "../assets/FMHero2.webp";
-import lightImage from "../assets/FMHero2.webp";
-const title = "We design, construct, and install residential fences.";
+import { Picture } from "astro:assets";
+import Hero from "../assets/FM Hero1.webp";
+const title = " ";
 const body =
-  "Our success is built upon five years of local experience and honest business practices installing hundreds of fences all over Greer, Inman, Boiling Springs, Chesnee, Spartanburg, Greenville, Lyman and Duncan. We'd love the opportunity to build your fence. Call Max & Ksenya @ 864-612-3200 to arrange a site visit and promptly provide a quote.";
+  "We're Max and Ksenya - Fence Max - a local family business focused on the Design, Construction, and Installation of residential fences in the Spartanburg County region. Our success is built upon honest business practices and five years of experience installing hundreds of fences. We've built fences all over the Upstate: Greer, Inman, Boiling Springs, Chesnee, Spartanburg, Greenville, Lyman and Duncan. We'd love the opportunity to build one for you. Call us 864-612-3200 to discuss your requirements and we will promptly provide a quote.";
 ---
 
-<section class="mb-12 bg-stone-100 dark:bg-slate-800">
+<section class="mb-0 bg-stone-100 dark:bg-slate-800">
   <div
     class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
   >
-    <Image
-      src={darkImage}
-      class="w-full hidden dark:block"
-      alt="A description of my image."
-    />
-    <Image
-      src={lightImage}
-      class="w-full dark:hidden border-solid border-2"
-      alt="A description of my image."
+    <Picture
+      src={Hero}
+      formats={["avif", "webp"]}
+      loading="eager"
+      alt="white vinyl fence"
     />
     <!-- <img class="w-full dark:hidden border-solid border-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg" alt="dashboard image">
         <img class="w-full hidden dark:block" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image"> -->
@@ -30,7 +25,7 @@ const body =
       >
         {title}
       </h2>
-      <p class="mb-8 mt-2 text-lg text-gray-700 dark:text-gray-400">{body}</p>
+      <p class="mb-2 mt-2 text-lg text-gray-700 dark:text-gray-400">{body}</p>
     </div>
   </div>
 </section>

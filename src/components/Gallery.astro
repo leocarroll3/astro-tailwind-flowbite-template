@@ -1,33 +1,49 @@
 ---
-
+import { Picture } from "astro:assets";
+import Vinyl1 from "../assets/Vinyl1.jpeg";
+import Vinyl2 from "../assets/Vinyl2.jpeg";
+import Vinyl3 from "../assets/Vinyl3.jpeg";
+import Wood1 from "../assets/Wood1.jpeg";
+import Wood2 from "../assets/Wood2.jpeg";
+import Wood3 from "../assets/Wood3.jpeg";
+import Metal1 from "../assets/Alum1.webp";
+import Metal2 from "../assets/Alum2.webp";
+import Metal3 from "../assets/Alum3.webp";
 ---
+
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
   <div>
     <img
       class="h-auto max-w-full rounded-lg"
       src="src/assets/FenceMaxVinyl.webp"
-      alt=""
+      alt="vinylgraphic"
     />
   </div>
   <div>
-    <img
+    <Picture
       class="h-auto max-w-full rounded-lg"
-      src="src/assets/Vinyl1.jpeg"
-      alt=""
+      src={Vinyl1}
+      formats={["avif", "webp"]}
+      loading="eager"
+      alt="White vinyl fence"
     />
   </div>
   <div>
-    <img
+    <Picture
       class="h-auto max-w-full rounded-lg"
-      src="src/assets/Vinyl2.jpeg"
-      alt=""
+      src={Vinyl2}
+      formats={["avif", "webp"]}
+      loading="eager"
+      alt="White vinyl fence"
     />
   </div>
   <div>
-    <img
+    <Picture
       class="h-auto max-w-full rounded-lg"
-      src="src/assets/Vinyl3.jpeg"
-      alt=""
+      src={Vinyl3}
+      formats={["avif", "webp"]}
+      loading="eager"
+      alt="White vinyl fence"
     />
   </div>
   <div>
@@ -38,52 +54,64 @@
     />
   </div>
   <div>
-    <img
+    <Picture
       class="h-auto max-w-full rounded-lg"
-      src="src/assets/Wood1.jpeg"
-      alt=""
+      src={Wood1}
+      formats={["avif", "webp"]}
+      loading="eager"
+      alt="Wood fence"
     />
   </div>
   <div>
-    <img
+    <Picture
       class="h-auto max-w-full rounded-lg"
-      src="src/assets/Wood2.jpeg"
-      alt=""
+      src={Wood2}
+      formats={["avif", "webp"]}
+      loading="eager"
+      alt="Wood fence"
     />
   </div>
   <div>
-    <img
+    <Picture
       class="h-auto max-w-full rounded-lg"
-      src="src/assets/Wood3.jpeg"
-      alt=""
+      src={Wood3}
+      formats={["avif", "webp"]}
+      loading="eager"
+      alt="Wood fence"
     />
   </div>
   <div>
     <img
       class="h-auto max-w-full rounded-lg"
       src="src/assets/FenceMaxMetal.webp"
-      alt=""
+      alt="metal fence"
     />
   </div>
   <div>
-    <img
+    <Picture
       class="h-auto max-w-full rounded-lg"
-      src="src/assets/Alum1.webp"
-      alt=""
+      src={Metal1}
+      formats={["avif", "webp"]}
+      loading="lazy"
+      alt="metal fence"
     />
   </div>
   <div>
-    <img
+    <Picture
       class="h-auto max-w-full rounded-lg"
-      src="src/assets/Alum2.webp"
-      alt=""
+      src={Metal2}
+      formats={["avif", "webp"]}
+      loading="lazy"
+      alt="metal fence"
     />
   </div>
   <div>
-    <img
+    <Picture
       class="h-auto max-w-full rounded-lg"
-      src="src/assets/Alum3.webp"
-      alt=""
+      src={Metal3}
+      formats={["avif", "webp"]}
+      loading="lazy"
+      alt="metal fence"
     />
   </div>
 </div>

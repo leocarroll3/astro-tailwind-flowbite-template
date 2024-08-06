@@ -1,0 +1,35 @@
+---
+import { Picture } from "astro:assets";
+import Hero from "../assets/FMHero2.webp";
+---
+
+<div
+  class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+>
+  <a href="#">
+    <Picture
+      class="rounded-t-lg"
+      src={Hero}
+      formats={["avif", "webp"]}
+      alt="A description of my image."
+    />
+  </a>
+  <div class="p-5">
+    <a href="#">
+      <h5
+        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+      >
+        White Vinyl
+      </h5>
+    </a>
+    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+      Our white vinyl fences are an excellent choice for homeowners seeking a
+      clean, polished look with minimal upkeep. They might be the most popular
+      choice in the Upstate! Resistant to fading, cracking, and warping, vinyl
+      fencing retains its pristine appearance for years, making it a
+      cost-effective and attractive option. Available in a variety of styles,
+      including privacy and semi-privacy designs, white vinyl fencing will
+      enhance your curb appeal while providing privacy and security.
+    </p>
+  </div>
+</div>
